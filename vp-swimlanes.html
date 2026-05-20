@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics AI — VP Swim Lane Mapping</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #000; background: #fff; line-height: 1.4; padding: 24px 32px; max-width: 1500px; margin: 0 auto; }
+  h1 { font-size: 14pt; font-weight: 700; margin-bottom: 4px; }
+  h2 { font-size: 11pt; font-weight: 700; margin-bottom: 8px; margin-top: 20px; }
+  .subtitle { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 16px; }
+  .nav { margin-bottom: 16px; padding: 8px 0; border-bottom: 2px solid #1a3a5c; }
+  .nav a { font-size: 9pt; font-weight: 700; color: #1a3a5c; text-decoration: none; margin-right: 20px; }
+  .nav a:hover { text-decoration: underline; }
+  .nav a.active { border-bottom: 2px solid #1a3a5c; padding-bottom: 4px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin-top: 8px; table-layout: fixed; }
+  th, td { border: 1px solid #bfbfbf; padding: 6px 8px; vertical-align: top; text-align: left; }
+
+  .header-row th { background: #1a3a5c; color: #fff; font-weight: 700; font-size: 9pt; text-align: center; }
+  .header-row th:first-child { text-align: left; }
+
+  .theme-row td { background: #1a3a5c; color: #fff; font-weight: 700; font-size: 9pt; }
+  .theme-row td:first-child { background: #1a3a5c; }
+
+  .swimlane-label { background: #f2f2f2; font-weight: 700; font-size: 9pt; width: 180px; min-width: 180px; }
+  .swimlane-label .desc { font-weight: 400; font-size: 7.5pt; color: #555; margin-top: 3px; font-style: italic; }
+
+  td ul { margin: 0; padding-left: 12px; }
+  td ul li { margin-bottom: 3px; line-height: 1.35; }
+  td ul li.highlight { font-weight: 600; color: #1a3a5c; }
+
+  .pillar-tag { display: inline-block; font-size: 6.5pt; font-weight: 700; padding: 1px 4px; border-radius: 2px; margin-left: 3px; vertical-align: middle; }
+  .tag-p1 { background: #dbeafe; color: #1e40af; }
+  .tag-p2 { background: #dcfce7; color: #166534; }
+  .tag-p3 { background: #fef3c7; color: #92400e; }
+  .tag-p4 { background: #fce7f3; color: #9d174d; }
+
+  .legend { margin: 12px 0 16px 0; }
+  .legend span { margin-right: 16px; font-size: 8pt; }
+
+  @media print {
+    body { padding: 12px; font-size: 7.5pt; }
+    table { font-size: 7pt; }
+    th, td { padding: 4px 5px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="index.html">Strategy & Roadmap</a>
+  <a href="vp-swimlanes.html" class="active">VP Swim Lanes</a>
+</div>
+
+<h1>Analytics AI Initiatives Mapped to VP Swim Lanes</h1>
+<p class="subtitle">~45 initiatives from 4 R&A strategic pillars mapped to 5 VP-level swim lanes across FY27</p>
+
+<div class="legend">
+  <span><span class="pillar-tag tag-p1">P1</span> Deliver Best in Class Analytics Experiences</span>
+  <span><span class="pillar-tag tag-p2">P2</span> Maximize Reach Across Surfaces</span>
+  <span><span class="pillar-tag tag-p3">P3</span> Activate Proactive Marketing Intelligence</span>
+  <span><span class="pillar-tag tag-p4">P4</span> Build a Trusted Quality Foundation</span>
+</div>
+
+<table>
+  <colgroup>
+    <col style="width:180px">
+    <col style="width:25%">
+    <col style="width:25%">
+    <col style="width:25%">
+    <col style="width:25%">
+  </colgroup>
+  <thead>
+    <tr class="header-row">
+      <th>FY27 Roadmap</th>
+      <th>Q1 FY27</th>
+      <th>Q2 FY27</th>
+      <th>Q3 FY27</th>
+      <th>Q4 FY27</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- GTM PRODUCT THEMES -->
+    <tr class="theme-row">
+      <td>GTM Product Themes</td>
+      <td>Agent Mode</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+    <!-- ACCELERATE ACTIVATION -->
+    <tr>
+      <td class="swimlane-label">
+        Accelerate Activation to First Business Payoff
+        <div class="desc">Get users to value faster through analytics, insights, and guided action</div>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">LLM auto chart generation + interactive data viz <span class="pillar-tag tag-p1">P1</span></li>
+          <li>In and cross session context persistence <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Email setup checklist <span class="pillar-tag tag-p2">P2</span></li>
+          <li>Contextual embedded insight across R&A pages <span class="pillar-tag tag-p2">P2</span></li>
+          <li>NL based report generation <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Segment/channel/device/demographics and geo breakdowns of 50+ metrics <span class="pillar-tag tag-p3">P3</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Multi-source data analysis <span class="pillar-tag tag-p1">P1</span></li>
+          <li>NL chart customization <span class="pillar-tag tag-p1">P1</span></li>
+          <li class="highlight">Insights-to-action workflows <span class="pillar-tag tag-p3">P3</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Scenario planning and forecasting <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Scheduled analysis templates <span class="pillar-tag tag-p1">P1</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Agent long-term memory <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Multi-modal reporting <span class="pillar-tag tag-p1">P1</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- WIN ICP EXPANSION -->
+    <tr>
+      <td class="swimlane-label">
+        Win ICP Expansion Through Product-Led Growth Systems
+        <div class="desc">Drive upgrades, expansion revenue, and deeper product adoption among target ICPs</div>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Campaign health intelligence, alpha <span class="pillar-tag tag-p3">P3</span></li>
+          <li>ICP and objective function setup <span class="pillar-tag tag-p3">P3</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Enhance next best recommendations <span class="pillar-tag tag-p3">P3</span></li>
+          <li>AB test recommendation engine <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Campaign health, beta <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Workspace sharing <span class="pillar-tag tag-p1">P1</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Campaign health GA <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Autonomous campaign optimization <span class="pillar-tag tag-p3">P3</span></li>
+          <li>E-comm channel/product mix optimization <span class="pillar-tag tag-p3">P3</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Profitability-aware optimization <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Inventory-aware campaigns <span class="pillar-tag tag-p3">P3</span></li>
+          <li class="highlight">Automated test and learn full agentic <span class="pillar-tag tag-p3">P3</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- SCALE OMNICHANNEL -->
+    <tr>
+      <td class="swimlane-label">
+        Scale Omnichannel Adoption
+        <div class="desc">Expand intelligence across surfaces, channels, and partner platforms</div>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Embed in Agent Mode experience <span class="pillar-tag tag-p2">P2</span></li>
+          <li>Omni decomposition plan <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Insight-to-action (Freddie) + Segmentation + Automation builder <span class="pillar-tag tag-p2">P2</span></li>
+          <li>Onboard to Omni layer <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>3P surface enablement <span class="pillar-tag tag-p2">P2</span></li>
+          <li>Loss aversion at cancellation <span class="pillar-tag tag-p2">P2</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Surface expansion optimization <span class="pillar-tag tag-p2">P2</span></li>
+          <li>Custom R&A API / MCP for 3P and MC everywhere <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- BECOME AI-FIRST -->
+    <tr>
+      <td class="swimlane-label">
+        Become an AI-First Platform
+        <div class="desc">Core AI capabilities that transform analytics from static reporting to proactive intelligence</div>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">LLM auto chart generation + interactive viz <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Campaign health intelligence, alpha <span class="pillar-tag tag-p3">P3</span></li>
+          <li>NL based report generation <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Context strategy discovery <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Next best recommendations <span class="pillar-tag tag-p3">P3</span></li>
+          <li>AB test recommendation engine <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Brand voice memory <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Hallucination reduction <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Autonomous campaign optimization <span class="pillar-tag tag-p3">P3</span></li>
+          <li>What-if marketing models <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Expand context data pipeline <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Branding and tone context <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Automated test and learn full agentic insights to action <span class="pillar-tag tag-p3">P3</span></li>
+          <li>Agent long-term memory <span class="pillar-tag tag-p1">P1</span></li>
+          <li>Continuous quality loop <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- STEP FUNCTION QUALITY -->
+    <tr>
+      <td class="swimlane-label">
+        Step Function Quality & Performance Improvements
+        <div class="desc">Data quality, eval pipeline, AI-powered QA, trust, and platform reliability</div>
+      </td>
+      <td>
+        <ul>
+          <li class="highlight">Eval pipeline (Omni + R&A) <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Quality baseline metrics <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Segments and tags activation <span class="pillar-tag tag-p4">P4</span></li>
+          <li class="highlight">QA AI POC (test and detect) <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Regression suite + golden datasets <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Metric drift detection <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Data source transparency, trust and 3P explainability <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Omni decomposition and testing in MC and QBO <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Omni eval integration <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Hallucination reduction <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Campaign metadata access <span class="pillar-tag tag-p4">P4</span></li>
+          <li>ALF label inference <span class="pillar-tag tag-p4">P4</span></li>
+          <li class="highlight">Self-healing QA loop <span class="pillar-tag tag-p4">P4</span></li>
+          <li class="highlight">CI/CD quality gate <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Expand context data pipeline <span class="pillar-tag tag-p4">P4</span></li>
+          <li>Branding and tone context <span class="pillar-tag tag-p4">P4</span></li>
+          <li class="highlight">QA scale to broader MC <span class="pillar-tag tag-p4">P4</span></li>
+          <li>UnitQ feedback loop for R&A regression testing <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Custom R&A API / MCP for 3P and MC everywhere <span class="pillar-tag tag-p4">P4</span></li>
+          <li class="highlight">Continuous quality loop <span class="pillar-tag tag-p4">P4</span></li>
+        </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h2 style="margin-top:24px;">Mapping Rationale</h2>
+<table style="font-size:9pt; margin-top:8px;">
+  <thead>
+    <tr><th style="background:#1a3a5c; color:#fff; width:200px;">VP Swim Lane</th><th style="background:#1a3a5c; color:#fff;">Why These Initiatives Map Here</th><th style="background:#1a3a5c; color:#fff; width:200px;">R&A Pillars Represented</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="font-weight:600;">Accelerate Activation to First Business Payoff</td>
+      <td>Initiatives that reduce time-to-value for new and existing users. Auto chart generation, contextual insights, and NL reports let users see value immediately. Insights-to-action workflows and session persistence ensure the first session leads to a business outcome, not just data viewing.</td>
+      <td>P1 (core experience), P2 (surface reach), P3 (report generation)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">Win ICP Expansion Through Product-Led Growth</td>
+      <td>Initiatives that drive upgrades and expansion revenue. Campaign health intelligence creates a new value tier that scales with campaign volume. Next-best recommendations, AB test engine, and autonomous optimization are premium-grade capabilities that justify higher plans. Profitability and inventory awareness connect to e-commerce ICPs.</td>
+      <td>P3 (MI depth), P1 (collaboration)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">Scale Omnichannel Adoption</td>
+      <td>Initiatives that expand Analytics AI beyond its current surface into Agent Mode, Freddie, Segmentation, Automation, 3P platforms, and QBO. Omni decomposition and API/MCP enablement create the technical foundation for everywhere-distribution.</td>
+      <td>P2 (surfaces), P4 (Omni architecture)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">Become an AI-First Platform</td>
+      <td>Core AI capabilities that differentiate Mailchimp from dashboard-based competitors. LLM-powered generation, next-best recommendations, autonomous optimization, agent memory, and the full agentic test-and-learn loop represent the AI-first transformation. Hallucination reduction and context expansion are AI infrastructure.</td>
+      <td>P1 (AI experience), P3 (AI intelligence), P4 (AI quality)</td>
+    </tr>
+    <tr>
+      <td style="font-weight:600;">Step Function Quality & Performance</td>
+      <td>All quality, eval, and QA initiatives. The AI-powered QA system (regression suite, drift detection, self-healing loop, CI/CD gates) represents a step function improvement from reactive to proactive quality. Data source transparency and Omni eval integration ensure consistent quality standards. CSAT recovery from 45% to 75% is the headline outcome.</td>
+      <td>P4 (quality foundation)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="font-size:8pt; color:#888; margin-top:16px;">Note: Some initiatives appear in multiple swim lanes (e.g., LLM auto chart gen maps to both Activation and AI-First; autonomous campaign optimization maps to both ICP Expansion and AI-First). This reflects genuine cross-lane value, not duplication. The primary mapping is where the initiative's business impact is strongest.</p>
+
+</body>
+</html>

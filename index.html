@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mailchimp Marketing Intelligence AI</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 10pt; color: #000; background: #fff; line-height: 1.45; padding: 32px 40px; max-width: 1400px; margin: 0 auto; }
+
+  .page-label { font-size: 9pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #555; margin-bottom: 4px; }
+  h1 { font-size: 16pt; font-weight: 700; margin-bottom: 6px; }
+  h2 { font-size: 12pt; font-weight: 700; margin-bottom: 8px; margin-top: 20px; border-bottom: 2px solid #000; padding-bottom: 4px; }
+  h3 { font-size: 10pt; font-weight: 700; margin-bottom: 4px; }
+
+  .vision-box { background: #f5f5f5; border-left: 4px solid #000; padding: 12px 16px; margin: 12px 0 16px 0; }
+  .vision-box p { font-size: 10pt; line-height: 1.5; }
+
+  .tenets-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 8px; }
+  .tenets-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .tenet h3 { font-size: 10pt; margin-bottom: 3px; }
+  .tenet p { font-size: 9pt; color: #333; line-height: 1.4; }
+
+  .benefits-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .benefit h3 { font-size: 10pt; margin-bottom: 3px; }
+  .benefit p { font-size: 9pt; color: #333; line-height: 1.4; }
+
+  .moat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .moat h3 { font-size: 10pt; margin-bottom: 3px; }
+  .moat p { font-size: 9pt; color: #333; line-height: 1.4; }
+
+  .shift-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .shift-box { border: 1px solid #ccc; padding: 12px; }
+  .shift-box h3 { font-size: 10pt; margin-bottom: 6px; background: #000; color: #fff; display: inline-block; padding: 2px 10px; }
+  .shift-box p { font-size: 9pt; color: #333; line-height: 1.4; }
+
+  .metrics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .metric-section h3 { font-size: 10pt; margin-bottom: 3px; }
+  .metric-section p { font-size: 9pt; color: #333; line-height: 1.4; }
+
+  .divider { border: none; border-top: 1px solid #ddd; margin: 16px 0; }
+  .divider-heavy { border: none; border-top: 3px solid #000; margin: 24px 0; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; margin-top: 8px; }
+  th, td { border: 1px solid #bfbfbf; padding: 8px 10px; vertical-align: top; text-align: left; }
+  th { background: #d9e2f3; font-weight: 700; font-size: 9pt; }
+  .pillar-cell { background: #f2f2f2; min-width: 180px; }
+  .pillar-name { font-weight: 700; font-size: 10pt; }
+  .pillar-scope { font-size: 8pt; color: #555; font-style: italic; margin-top: 3px; }
+  .pillar-metric { font-size: 8pt; font-weight: 700; color: #333; margin-top: 4px; }
+  .q-header { text-align: center; }
+  .q-label { font-size: 10pt; font-weight: 700; }
+  .q-theme { font-size: 8pt; font-weight: 400; font-style: italic; color: #555; }
+
+  ul { margin: 0; padding-left: 14px; }
+  ul li { margin-bottom: 2px; line-height: 1.4; }
+
+  .detail-table th { font-size: 9pt; }
+  .detail-table td { font-size: 9pt; line-height: 1.35; }
+  .detail-table .init-cell { font-weight: 600; background: #f2f2f2; min-width: 160px; }
+
+  @media print {
+    body { padding: 16px; font-size: 8pt; }
+    table { font-size: 7.5pt; }
+    th, td { padding: 5px 6px; }
+    .tenets-grid, .benefits-grid, .moat-grid, .shift-grid, .metrics-grid { gap: 10px; }
+    h1 { font-size: 14pt; }
+    h2 { font-size: 11pt; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════ STRATEGY OVERVIEW ═══════ -->
+
+<div class="page-label">Mailchimp Marketing Intelligence AI</div>
+<h1>AI-Powered Marketing Intelligence</h1>
+
+<h2>Vision</h2>
+<div class="vision-box">
+  <p>Transform Mailchimp into a proactive marketing intelligence platform that connects data to action — continuously helping customers maximize their marketing performance by diagnosing what happened, explaining why, recommending what to do next, and executing it on the platform. Powered by Intuit's ecosystem of data across Mailchimp and QuickBooks, every marketing dollar is optimized toward the customer's objective function, every insight converts to a platform action in one click, and the system compounds intelligence with every campaign cycle.</p>
+</div>
+
+<h2>Key Tenets: Differentiated Experience & Capability</h2>
+<div class="tenets-grid">
+  <div class="tenet">
+    <h3>1. Business Outcome First</h3>
+    <p>Every marketing metric, recommendation, and autonomous action is grounded in the customer's objective function — revenue, conversion, engagement, margin, ROAS, or growth. The AI optimizes toward what the business is trying to maximize, not vanity metrics.</p>
+  </div>
+  <div class="tenet">
+    <h3>2. Intelligence, Not Dashboards</h3>
+    <p>The system doesn't just show what happened — it explains why results changed, diagnoses root causes across audience, channel, timing, content, and product, and prescribes what to do next with a clear path to action.</p>
+  </div>
+  <div class="tenet">
+    <h3>3. Closed-Loop Insight to Action</h3>
+    <p>Every recommendation converts to a platform action in one click — segment creation, campaign setup, automation trigger, A/B test launch. The gap between knowing and doing is eliminated.</p>
+  </div>
+</div>
+<div class="tenets-grid-2">
+  <div class="tenet">
+    <h3>4. Proactive and Autonomous</h3>
+    <p>Campaign health monitoring, inventory-aware triggers, profitability optimization, and automated test-and-learn run continuously. The system acts before problems surface and optimizes before opportunities expire — with the customer always in control.</p>
+  </div>
+  <div class="tenet">
+    <h3>5. Compounding Trust Through Quality</h3>
+    <p>AI-powered QA, cross-surface data validation, source transparency, and 3P explainability ensure every number is verifiable. An always-on eval pipeline and self-healing quality loop mean the system gets more accurate and trustworthy with every cycle.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>Customer Benefits</h2>
+<div class="benefits-grid">
+  <div class="benefit">
+    <h3>1. Maximize Marketing Performance Against Your Objective</h3>
+    <p>Whether the goal is revenue, conversions, engagement, repeat purchase, or ROAS — the AI continuously optimizes toward it. Campaign health intelligence detects risks early, next-best recommendations prioritize the highest-impact action, and autonomous optimization keeps campaigns performing at their peak.</p>
+  </div>
+  <div class="benefit">
+    <h3>2. Compress the Insight-to-Action Loop From Days to Minutes</h3>
+    <p>Stop spending hours pulling reports, diagnosing issues, and manually configuring campaigns. NL-powered analysis, one-click insights-to-action workflows, and automated report generation collapse the cycle from data to decision to execution — so marketers spend time on strategy, not spreadsheets.</p>
+  </div>
+  <div class="benefit">
+    <h3>3. Trust Every Number, Recommendation, and Action</h3>
+    <p>Source transparency links every insight to its dataset and calculation methodology. 3P explainability clarifies why Mailchimp numbers may differ from Google Analytics or Shopify. AI-powered QA catches data quality issues before customers ever see them — CSAT recovers and trust compounds.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>Competitive Moat</h2>
+<div class="moat-grid">
+  <div class="moat">
+    <h3>Compounding Intelligence Moat</h3>
+    <p>Every campaign cycle enriches the recommendation engine. Counterfactual models, agent trust scoring, cross-agent learning, and automated test-and-learn compound weekly. The longer the system runs, the smarter and more personalized it becomes — switching cost grows with every optimization cycle. No competitor can replicate a customer's accumulated learning history.</p>
+  </div>
+  <div class="moat">
+    <h3>Platform Moat</h3>
+    <p>The full Intuit ecosystem (QuickBooks + Mailchimp) creates an intelligence surface that single-point tools fundamentally cannot match. Marketing performance connected to financial outcomes, inventory signals feeding campaign triggers, and profitability-aware optimization require data that lives across the ledger and the growth engine. No standalone ESP or analytics tool can bridge this.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>The Experience Shift</h2>
+<div class="shift-grid">
+  <div class="shift-box">
+    <h3>FROM</h3>
+    <p>Marketers manually stitch together dashboards, guess at what's working, and measure success by opens and clicks. Campaign decisions are based on intuition. Report building takes hours. Testing is occasional and disconnected from strategy. Data quality issues surface through customer complaints. Every insight requires manual translation into action across separate screens. The loop from data to decision to execution takes days or weeks.</p>
+  </div>
+  <div class="shift-box">
+    <h3>TO</h3>
+    <p>An autonomous marketing intelligence layer that sees performance in real time, explains why results changed, recommends what to do next, and executes it on the platform — all optimized toward the customer's objective function. Insight-to-action takes one click. Testing is continuous and self-improving. Data quality is validated by AI before customers ever log in. The system compounds intelligence with every campaign cycle, getting measurably smarter every week. Marketers spend time on strategy, not spreadsheets.</p>
+  </div>
+</div>
+
+<hr class="divider">
+
+<h2>How We Measure Success</h2>
+<div class="metrics-grid">
+  <div class="metric-section">
+    <h3>Product Adoption & Engagement</h3>
+    <p>Weekly active users (WAU) of Analytics AI. Repeated usage rate — % of users who return and engage with Analytics AI multiple times per week. Analytics AI exposure and engagement rate across embedded surfaces.</p>
+  </div>
+  <div class="metric-section">
+    <h3>Customer Benefit Metrics</h3>
+    <p>Increase in % of Mailchimp-attributed revenue — marketing revenue driven by AI-recommended or AI-optimized campaigns. Increase in campaign engagement (open rate, click rate, conversion rate) for users engaging with Analytics AI vs. non-users. Time-to-insight reduction — from "something changed" to "here's why and what to do," measured in minutes vs. days.</p>
+  </div>
+  <div class="metric-section">
+    <h3>Business Outcome Metrics (MRR)</h3>
+    <p>Increase in MRR through retention — net revenue retention lift among Analytics AI users vs. non-users. Trial-to-paid conversion — trial users who engage with Analytics AI convert at higher rates. Free-to-paid conversion — free users exposed to intelligence surfaces upgrade to access full capabilities. Plan upgrades — users upgrade to higher tiers to unlock advanced intelligence features.</p>
+  </div>
+  <div class="metric-section">
+    <h3>Quality Indicators</h3>
+    <p>Conversation quality score (Omni eval) — accuracy, relevance, completeness, hallucination rate. R&A CSAT recovery from 45% toward 75% target. % of data quality bugs caught proactively through QA AI Agents (&gt;95% target). Cross-surface metric consistency rate. Mean time to detect and resolve data quality issues.</p>
+  </div>
+</div>
+
+<hr class="divider-heavy">
+
+<!-- ═══════ FY27 PHASED ROADMAP ═══════ -->
+
+<h1>FY27 Phased Roadmap</h1>
+<p style="color:#555; font-style:italic; margin-bottom:10px;">4 pillars, 4 quarters — from foundation and visibility to a closed-loop proactive intelligence system</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Strategic Pillar</th>
+      <th class="q-header"><span class="q-label">Q1</span><br><span class="q-theme">Foundation & Visibility</span></th>
+      <th class="q-header"><span class="q-label">Q2</span><br><span class="q-theme">Insight to Recommendation</span></th>
+      <th class="q-header"><span class="q-label">Q3</span><br><span class="q-theme">Business Context & Optimization</span></th>
+      <th class="q-header"><span class="q-label">Q4</span><br><span class="q-theme">Closed-Loop Proactive System</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="pillar-cell">
+        <div class="pillar-name">Deliver Best in Class Analytics Experiences</div>
+        <div class="pillar-scope">Interactive viz, charting, scenario planning, persistent context, always-on BI</div>
+        <div class="pillar-metric">Metric: Analytics AI WAU</div>
+      </td>
+      <td>
+        <ul>
+          <li>LLM powered auto chart generation and interactive data viz</li>
+          <li>In and cross session context persistence</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Multi-source data analysis</li>
+          <li>NL chart customization</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Scenario planning & forecasting. What-if marketing models</li>
+          <li>Scheduled analysis templates</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Agent long-term memory</li>
+          <li>Multi-modal reporting</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="pillar-cell">
+        <div class="pillar-name">Maximize Reach Across Surfaces</div>
+        <div class="pillar-scope">High-traffic surface placement, Omni integration, 1P/3P expansion</div>
+        <div class="pillar-metric">Metric: Analytics AI exposure & engagement rate</div>
+      </td>
+      <td>
+        <ul>
+          <li>Embed in Agent Mode experience</li>
+          <li>Contextual embedded insight across R&A supported pages</li>
+          <li>Email setup checklist</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Insight-to-action (Freddie) and Segmentation and Automation builder</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Loss aversion (cancel)</li>
+          <li>3P surface enablement</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Surface expansion optimization</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="pillar-cell">
+        <div class="pillar-name">Activate Proactive Marketing Intelligence</div>
+        <div class="pillar-scope">Campaign health, proactive recommendations, profitability optimization, closed-loop execution</div>
+        <div class="pillar-metric">Metric: % MC-attributed revenue</div>
+      </td>
+      <td>
+        <ul>
+          <li>Campaign health intelligence — alpha</li>
+          <li>Segment/channel/device/demographics and geo breakdowns of 50+ metrics</li>
+          <li>NL based report generation</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Enhance next best recommendations</li>
+          <li>Insights-to-action workflows</li>
+          <li>AB test recommendation engine</li>
+          <li>Campaign health — beta</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>E-comm channel/product mix optimization</li>
+          <li>Campaign health GA</li>
+          <li>Autonomous campaign optimization</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Inventory-aware campaigns</li>
+          <li>Profitability-aware optimization</li>
+          <li>Automated test & learn full agentic insights to action</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="pillar-cell">
+        <div class="pillar-name">Build a Trusted Quality Foundation</div>
+        <div class="pillar-scope">AI conversation quality, data quality, AI-powered QA, MC+QBO data, context enrichment</div>
+        <div class="pillar-metric">Metric: R&A CSAT + bugs caught proactively (&gt;95%)</div>
+      </td>
+      <td>
+        <ul>
+          <li>Eval pipeline (Omni + R&A)</li>
+          <li>Quality baseline metrics</li>
+          <li>Segments & tags activation</li>
+          <li>QA AI POC (test & detect)</li>
+          <li>Regression suite + golden datasets</li>
+          <li>Metric drift detection</li>
+          <li>Data source transparency, trust and 3P explainability</li>
+          <li>Omni decomposition and testing in MC and QBO</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Omni eval integration</li>
+          <li>Hallucination reduction</li>
+          <li>Campaign metadata access</li>
+          <li>ALF label inference</li>
+          <li>Self-healing QA loop</li>
+          <li>CI/CD quality gate</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Expand context data pipeline</li>
+          <li>Branding & tone context</li>
+          <li>QA scale to broader MC</li>
+          <li>UnitQ feedback loop for R&A regression testing</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>Custom R&A API / MCP for 3P and MC everywhere</li>
+          <li>Continuous quality loop</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="divider-heavy">
+
+<!-- ═══════ INITIATIVE DETAILS ═══════ -->
+
+<h1>Initiative Details by Strategic Pillar</h1>
+<p style="color:#555; font-style:italic; margin-bottom:12px;">What each initiative is, the specific problem it solves, and the key functional benefit for the customer</p>
+
+<!-- PILLAR 1 -->
+<h2>Deliver Best in Class Analytics Experiences</h2>
+<table class="detail-table">
+  <thead>
+    <tr><th style="min-width:160px">Initiative</th><th>What It Is</th><th>Problem It Solves</th><th>Key Customer Benefit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="init-cell">LLM powered auto chart generation and interactive data viz</td><td>LLM selects the optimal chart type for the data and generates fully interactive visualizations users can sort, filter, and drill into directly in chat.</td><td>Marketers spend time manually building charts and switching between tools to visualize campaign data, often choosing suboptimal chart types.</td><td>Get the right visualization instantly without leaving the conversation, with full interactivity to explore data on the spot.</td></tr>
+    <tr><td class="init-cell">In and cross session context persistence</td><td>Persists all files, prompts, generated assets, and conversation context within and across sessions so the AI remembers prior work.</td><td>Every new session starts from scratch — users repeatedly re-explain their business, goals, and prior analysis.</td><td>Pick up where you left off; the AI builds on prior context so each interaction is smarter and more personalized.</td></tr>
+    <tr><td class="init-cell">Multi-source data analysis</td><td>Upload and combine files from multiple sources (Google Workspace, local drive, connected accounts) into a single unified analysis context.</td><td>Marketing data is fragmented across spreadsheets, Google Sheets, CSVs, and platform exports — manual stitching is error-prone and slow.</td><td>Analyze all your data together in one place without manual consolidation or copy-paste between tools.</td></tr>
+    <tr><td class="init-cell">NL chart customization</td><td>Edit chart type, labels, colors, filters, and layout through natural language instructions instead of navigating configuration menus.</td><td>Customizing charts requires navigating complex UI controls; non-technical users struggle to get the exact view they need.</td><td>Say what you want changed and see it update instantly — "make it a bar chart grouped by region" just works.</td></tr>
+    <tr><td class="init-cell">Scenario planning & forecasting</td><td>Forecast future campaign performance from historical trends and model what-if scenarios by adjusting discount, budget, audience, channel mix, and timing.</td><td>Marketers make investment decisions without projected impact — they rely on intuition rather than data-driven projections.</td><td>Test campaign strategies before committing budget by seeing forecasted impact on conversions, revenue, and ROAS.</td></tr>
+    <tr><td class="init-cell">Scheduled analysis templates</td><td>Save any ad-hoc analysis as a reusable template and schedule it to run automatically on a daily, weekly, or monthly cadence.</td><td>Teams manually re-run the same weekly and monthly reports, wasting hours on repetitive analysis that should be automated.</td><td>Set it once and get consistent, automated monitoring of key metrics delivered on your schedule.</td></tr>
+    <tr><td class="init-cell">Agent long-term memory</td><td>The AI agent retains knowledge of your business goals, brand voice, audience segments, and analytical preferences across all future sessions.</td><td>Context is lost between sessions — users re-teach the AI their business context, KPIs, and preferences every time.</td><td>A personal marketing analyst that knows your business and improves with every interaction.</td></tr>
+    <tr><td class="init-cell">Multi-modal reporting</td><td>Generate insights and recommendations delivered in multiple formats — documents, slide decks, and video summaries — beyond standard charts and tables.</td><td>Sharing insights with stakeholders requires manually reformatting analysis into different presentation formats for different audiences.</td><td>Go from insight to stakeholder-ready deliverable in any format without leaving the platform.</td></tr>
+  </tbody>
+</table>
+
+<!-- PILLAR 2 -->
+<h2>Maximize Reach Across Surfaces</h2>
+<table class="detail-table">
+  <thead>
+    <tr><th style="min-width:160px">Initiative</th><th>What It Is</th><th>Problem It Solves</th><th>Key Customer Benefit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="init-cell">Embed in Agent Mode experience</td><td>Integrate Analytics AI directly into the Omni Agent Mode interface so users encounter marketing intelligence within their natural workflow.</td><td>Analytics AI exists as a separate destination — users who would benefit most never discover or navigate to it.</td><td>Get proactive analytics insights without changing your workflow or navigating to a separate tool.</td></tr>
+    <tr><td class="init-cell">Contextual embedded insight across R&A supported pages</td><td>Surface relevant AI-generated insights directly on reporting and analytics pages based on the data the user is currently viewing.</td><td>Users view static reports without understanding what the data means or what action to take — insights require a separate analysis step.</td><td>See actionable insights right where you're already looking at data — no extra clicks or context switching.</td></tr>
+    <tr><td class="init-cell">Email setup checklist</td><td>Embed AI-powered diagnostic insights into the email setup flow to flag optimization opportunities before the campaign is sent.</td><td>Users complete email setup without knowing if their subject line, send time, or audience selection is optimized — mistakes are caught only after send.</td><td>Catch optimization opportunities before you hit send, not after performance data reveals the missed opportunity.</td></tr>
+    <tr><td class="init-cell">Insight-to-action (Freddie) and Segmentation and Automation builder</td><td>Connect Analytics AI recommendations directly to Freddie AI, Segmentation, and Automation builder so insights convert to configured actions in one click.</td><td>Users receive recommendations but must manually recreate segments, build automations, or configure campaigns across separate screens — the insight-to-action gap causes drop-off.</td><td>Go from "here's what you should do" to "it's ready to launch" in a single click across segments, automations, and campaigns.</td></tr>
+    <tr><td class="init-cell">Loss aversion (cancel)</td><td>Surface personalized performance data, unrealized opportunities, and ROI the customer would forfeit at the cancellation point.</td><td>Customers cancel without understanding the cumulative marketing value Mailchimp has delivered or the active growth trajectory they'd interrupt.</td><td>Make a fully informed cancellation decision with visibility into your marketing ROI and what you'd lose by leaving.</td></tr>
+    <tr><td class="init-cell">3P surface enablement</td><td>Enable Analytics AI to power insights on third-party surfaces and partner integrations beyond Mailchimp's owned properties.</td><td>Marketing intelligence is locked inside Mailchimp — customers working across multiple tools miss Mailchimp's insights where they spend time.</td><td>Access Mailchimp marketing intelligence wherever you work, not just inside Mailchimp.</td></tr>
+    <tr><td class="init-cell">Surface expansion optimization</td><td>Use engagement and conversion data to identify and prioritize the highest-impact surfaces for next-wave Analytics AI placement.</td><td>Surface placement decisions are based on intuition rather than evidence of where AI insights drive the most user action and value.</td><td>Analytics AI appears where it drives the most action — surfaces are continuously optimized based on real engagement data.</td></tr>
+  </tbody>
+</table>
+
+<!-- PILLAR 3 -->
+<h2>Activate Proactive Marketing Intelligence</h2>
+<table class="detail-table">
+  <thead>
+    <tr><th style="min-width:160px">Initiative</th><th>What It Is</th><th>Problem It Solves</th><th>Key Customer Benefit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="init-cell">Campaign health intelligence — alpha</td><td>Continuously monitor campaign performance across audience, segment, channel, timing, content, and promotion to detect risks and surface opportunities in real time.</td><td>Marketers discover underperforming campaigns days or weeks after launch — by then, budget is wasted and audiences are fatigued.</td><td>Know immediately when a campaign is underperforming and exactly which dimension (audience, timing, content) is the root cause.</td></tr>
+    <tr><td class="init-cell">Segment/channel/device/demographics and geo breakdowns of 50+ metrics</td><td>Automatically break down 50+ marketing metrics by microsegment, channel, device type, demographics, and geography to reveal hidden performance variance.</td><td>Aggregate metrics hide critical differences — a campaign that looks average overall may be thriving in one segment and failing in another.</td><td>See exactly where you're winning and losing across every dimension without manually slicing data 50 different ways.</td></tr>
+    <tr><td class="init-cell">NL based report generation</td><td>Generate stakeholder-ready reports through natural language — the AI compiles data, synthesizes findings, and formats output for immediate sharing.</td><td>Building weekly and monthly reports requires hours of pulling data, creating charts, writing summaries, and formatting for different stakeholders.</td><td>Say "create my monthly marketing report" and get a polished, data-backed document ready to share with leadership.</td></tr>
+    <tr><td class="init-cell">Enhance next best recommendations</td><td>Recommend the specific segment, channel, send time, content type, product, or promotion most likely to improve the customer's selected objective.</td><td>Marketers face too many options and not enough signal — they guess which lever to pull rather than knowing which action has the highest expected impact.</td><td>Get a prioritized, data-backed recommendation for exactly what to do next to move your target metric.</td></tr>
+    <tr><td class="init-cell">Insights-to-action workflows</td><td>Convert any AI recommendation into executable action through one-click segment creation, campaign strategy approval, marketing plan creation, and campaign setup.</td><td>A gap between knowing and doing — translating an insight into a configured campaign takes multiple manual steps across different screens.</td><td>Act on a recommendation instantly — one click to create the segment, approve the strategy, and set up the campaign.</td></tr>
+    <tr><td class="init-cell">AB test recommendation engine</td><td>Recommend the optimal test to run — audience split, content variants, channel mix, promotion type, and success metric — based on current performance gaps.</td><td>Teams either skip testing (too complex to design) or test the wrong variable (testing subject lines when the real issue is audience targeting).</td><td>Always test the highest-impact variable with a properly designed experiment — no statistical expertise required.</td></tr>
+    <tr><td class="init-cell">Campaign health — beta</td><td>Expand campaign health monitoring to full production scale with real-time alerting, trend analysis, and automated diagnostic reports across all active campaigns.</td><td>Alpha coverage is limited to key metrics and surfaces — many campaign health issues still go undetected until customers report them.</td><td>Every active campaign is continuously monitored with proactive alerts before any performance degradation reaches your audience.</td></tr>
+    <tr><td class="init-cell">E-comm channel/product mix optimization</td><td>Recommend how to allocate marketing effort across email, SMS, WhatsApp, product categories, and customer segments based on historical revenue contribution and margin.</td><td>Marketers allocate budget evenly or by intuition — they don't know which channel and product combinations actually drive the most revenue per dollar.</td><td>Shift spend to your highest-returning channel and product combinations with data-backed allocation recommendations.</td></tr>
+    <tr><td class="init-cell">Campaign health GA</td><td>General availability of campaign health intelligence with full coverage across all campaign types, channels, customer segments, and reporting surfaces.</td><td>Beta coverage gaps mean some campaign types or channels still lack proactive monitoring — inconsistent coverage erodes trust.</td><td>Complete, always-on campaign health monitoring for your entire marketing program — nothing slips through.</td></tr>
+    <tr><td class="init-cell">Autonomous campaign optimization</td><td>The system proactively recommends, launches, monitors, and optimizes campaigns with the customer approving key decisions and remaining in control.</td><td>Manual optimization is slow — by the time a marketer adjusts targeting, timing, or content, the opportunity window has often passed.</td><td>Campaigns continuously self-optimize in real time while you retain approval authority over every material change.</td></tr>
+    <tr><td class="init-cell">Inventory-aware campaigns</td><td>Use product inventory signals (stock levels, demand velocity, restock dates) to automatically trigger, throttle, or adjust campaign targeting and messaging.</td><td>Marketing promotes products that are out of stock or ignores products with excess inventory — creating customer frustration and missed revenue.</td><td>Never promote a sold-out product or miss a clearance opportunity — campaigns automatically adapt to your inventory reality.</td></tr>
+    <tr><td class="init-cell">Profitability-aware optimization</td><td>Optimize campaigns beyond ROAS by factoring in product margin, fulfillment cost, discount depth, and QBO financial outcomes to maximize true profit.</td><td>ROAS-optimized campaigns can destroy margin — promoting high-revenue but low-margin products or over-discounting erodes actual profitability.</td><td>Optimize for real profit, not just top-line revenue — every recommendation accounts for your cost structure and margins.</td></tr>
+    <tr><td class="init-cell">Automated test & learn full agentic insights to action</td><td>The system autonomously designs tests from performance gaps, executes them, measures results, learns from outcomes, and feeds learnings into the next recommendation cycle.</td><td>Testing is manual and episodic — marketers run occasional A/B tests but rarely close the loop from result to updated strategy to next test.</td><td>A continuous learning engine that runs the right tests, applies what it learns, and gets smarter with every campaign cycle.</td></tr>
+  </tbody>
+</table>
+
+<!-- PILLAR 4 -->
+<h2>Build a Trusted Quality Foundation</h2>
+<table class="detail-table">
+  <thead>
+    <tr><th style="min-width:160px">Initiative</th><th>What It Is</th><th>Problem It Solves</th><th>Key Customer Benefit</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="init-cell">Eval pipeline (Omni + R&A)</td><td>Establish a robust evaluation pipeline combining Omni platform metrics with R&A-specific evals to continuously measure conversation accuracy, relevance, completeness, and tone.</td><td>No systematic way to measure whether Analytics AI responses are accurate, relevant, and complete — quality issues are caught anecdotally.</td><td>Every AI response is measured against quality benchmarks so degradation is caught and fixed before it impacts users.</td></tr>
+    <tr><td class="init-cell">Quality baseline metrics</td><td>Establish quantitative baselines for conversation quality across accuracy, hallucination rate, relevance, completeness, and voice and tone alignment.</td><td>Without baselines, there's no way to know if quality is improving or degrading — changes are invisible until customers complain.</td><td>A clear quality scorecard that shows whether each release makes the AI better or worse.</td></tr>
+    <tr><td class="init-cell">Segments & tags activation</td><td>Activate customer segment and tag data as AI context so responses reflect the user's actual audience structure and campaign taxonomy.</td><td>The AI gives generic advice because it doesn't know how the customer organized their audience — segments, tags, and groups are invisible to it.</td><td>Recommendations tailored to your actual audience segments and tagging structure, not generic marketing advice.</td></tr>
+    <tr><td class="init-cell">QA AI POC (test & detect)</td><td>Deploy an AI-powered QA agent that runs automated regression tests and detects metric inconsistencies across reporting surfaces before customers see them.</td><td>Data quality issues are caught reactively — customers report discrepancies via VOC after they've already lost trust in the numbers.</td><td>Data quality issues are caught and flagged internally before any customer sees incorrect numbers.</td></tr>
+    <tr><td class="init-cell">Regression suite + golden datasets</td><td>Build comprehensive regression test suites and golden datasets by ICP, channel, and campaign type — including edge cases like zero engagement, bot traffic, and MPP.</td><td>Testing is manual and non-comprehensive — edge cases like bot filtering, MPP opens, and zero-engagement campaigns are not covered.</td><td>Every reporting scenario — including the hardest edge cases — is automatically validated on every release.</td></tr>
+    <tr><td class="init-cell">Metric drift detection</td><td>Continuously monitor metric values against baselines and detect meaningful drift versus expected variance with automated alerting at 0% threshold.</td><td>Gradual metric drift goes unnoticed until the cumulative error is large enough for a customer to spot and report.</td><td>Even small metric deviations are caught immediately — before they compound into visible data quality issues.</td></tr>
+    <tr><td class="init-cell">Data source transparency, trust and 3P explainability</td><td>Provide clear citations linking every AI insight to its source dataset, metric definition, and calculation methodology — including explainability for 3P data comparisons.</td><td>Users don't trust AI insights because they can't verify where numbers came from — especially when they differ from Google Analytics or Shopify.</td><td>Every number has a traceable source — users can verify methodology and understand why Mailchimp numbers may differ from third-party tools.</td></tr>
+    <tr><td class="init-cell">Omni decomposition and testing in MC and QBO</td><td>Decompose Analytics AI into modular Omni-compatible skills and tools, validated through end-to-end testing across both Mailchimp and QuickBooks Online surfaces.</td><td>Analytics AI is monolithic and tightly coupled to MC — it cannot be deployed on QBO or other Intuit surfaces without a full rebuild.</td><td>A modular architecture that enables Analytics AI to work consistently across Mailchimp and QuickBooks surfaces.</td></tr>
+    <tr><td class="init-cell">Omni eval integration</td><td>Integrate the Omni platform-wide evaluation framework so Analytics AI quality is measured using the same standards as all Omni-powered experiences.</td><td>R&A-specific evals may miss quality dimensions that matter across the broader Omni ecosystem — creating inconsistent quality bars.</td><td>Analytics AI quality is benchmarked against the same standard as every other AI experience in the ecosystem.</td></tr>
+    <tr><td class="init-cell">Hallucination reduction</td><td>Reduce AI hallucination rate through improved grounding, citation enforcement, and eval-driven prompt refinement against golden datasets.</td><td>The AI sometimes generates plausible but incorrect statistics, trend descriptions, or recommendations — eroding user trust with every wrong number.</td><td>Every data point the AI presents is grounded in actual data — users can trust the numbers without manual verification.</td></tr>
+    <tr><td class="init-cell">Campaign metadata access</td><td>Activate campaign metadata (preview text, sender info, subject lines, send configuration) as AI context for more informed analysis and recommendations.</td><td>The AI sees performance metrics but not campaign configuration — it can tell you open rate dropped but not that your preview text was truncated on mobile.</td><td>The AI connects performance outcomes to specific campaign choices — explaining the "why" behind every metric movement.</td></tr>
+    <tr><td class="init-cell">ALF label inference</td><td>Integrate campaign inference signals (ALF labels and classifications) so the AI automatically understands campaign type, intent, and category.</td><td>The AI treats all campaigns identically — it doesn't distinguish between welcome series, promotional blasts, winback, or transactional emails.</td><td>Recommendations account for campaign type — a welcome series gets different optimization advice than a flash sale promotion.</td></tr>
+    <tr><td class="init-cell">Self-healing QA loop</td><td>Expand QA from detection to a full self-healing cycle: test, detect, analyze, fix, learn — with each resolved issue automatically becoming a new permanent test case.</td><td>Fixing a bug doesn't prevent recurrence — the same class of issue can reappear because past fixes are not codified into the test suite.</td><td>The system gets smarter with every incident — each fix permanently strengthens the quality safety net.</td></tr>
+    <tr><td class="init-cell">CI/CD quality gate</td><td>Wire the regression suite into CI/CD as a blocking deployment gate — no release ships without passing all metric consistency and quality checks.</td><td>Quality validation happens after deployment — bugs reach production and customers before they are caught by internal testing.</td><td>Every release is validated before it reaches a single customer — quality issues are blocked at the deployment gate.</td></tr>
+    <tr><td class="init-cell">Expand context data pipeline</td><td>Broaden AI context by ingesting content data (email and SMS body text), engagement signals, and behavioral data beyond current aggregate metric coverage.</td><td>The AI sees aggregate metrics but not the content or behavioral signals that explain performance — limiting diagnostic depth.</td><td>The AI analyzes why campaigns work — connecting content choices, creative elements, and user behavior to outcomes.</td></tr>
+    <tr><td class="init-cell">Branding & tone context</td><td>Incorporate the customer's brand voice, tone guidelines, and communication style into AI-generated content, reports, and recommendations.</td><td>AI outputs sound generic and don't match the customer's brand — reports and recommendations require manual tone editing before sharing.</td><td>Every AI output matches your brand voice — reports and recommendations are stakeholder-ready without manual editing.</td></tr>
+    <tr><td class="init-cell">QA scale to broader MC</td><td>Extend the AI-powered QA architecture beyond R&A to Campaigns, Automations, Audience, and Ecommerce surfaces with the same proactive monitoring coverage.</td><td>QA coverage is limited to R&A — data quality issues on other surfaces still go undetected.</td><td>The same proactive quality monitoring that protects reporting now protects every customer-facing Mailchimp surface.</td></tr>
+    <tr><td class="init-cell">UnitQ feedback loop for R&A regression testing</td><td>Feed customer-reported VOC from UnitQ directly into the regression testing library, closing the loop between reactive customer feedback and proactive detection.</td><td>Customer-reported issues and QA test coverage live in separate systems — a VOC doesn't automatically strengthen future testing.</td><td>Every customer complaint automatically becomes a permanent test case — the system learns from real-world issues.</td></tr>
+    <tr><td class="init-cell">Custom R&A API / MCP for 3P and MC everywhere</td><td>Build custom R&A APIs and MCP integrations enabling third-party tools and all Mailchimp surfaces to consume Analytics AI intelligence programmatically.</td><td>Analytics intelligence is locked inside its own surface — external tools and other MC surfaces cannot access it programmatically.</td><td>Marketing intelligence is available wherever you work — inside Mailchimp, in third-party tools, and through programmatic access.</td></tr>
+    <tr><td class="init-cell">Continuous quality loop</td><td>Establish an always-on quality monitoring system that continuously validates conversation quality, data accuracy, and response relevance without manual intervention.</td><td>Quality assurance is periodic and reactive — issues accumulate between review cycles and are caught by customers before the team.</td><td>Quality is monitored 24/7 — degradation is detected and addressed in real time, not at the next review cycle.</td></tr>
+  </tbody>
+</table>
+
+</body>
+</html>

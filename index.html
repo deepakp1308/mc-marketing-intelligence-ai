@@ -437,32 +437,53 @@
 <!-- ═══════ BUSINESS CASE & PROJECTIONS ═══════ -->
 
 <h1>Business Case & Projections</h1>
-<p style="color:#555; font-style:italic; margin-bottom:10px;">April 2026 baseline → July 2027 targets — conservative model (retention capped at +1pp)</p>
+<p style="color:#555; font-style:italic; margin-bottom:10px;">April 2026 baseline → July 2027 targets — conservative model (retention capped at +1pp, median MRR)</p>
 <p style="font-size:8pt; color:#888; margin-bottom:16px;">Sources: bi_reporting.users_monthly_rollup, bi_product.analytics_track_daily_rollup, bi_reporting.ecommerce_orders_monthly_rollup</p>
 
 <h2>April 2026 Baselines</h2>
 <table>
-  <thead><tr>
-    <th>Metric</th><th>Value</th><th>Metric</th><th>Value</th>
-  </tr></thead>
+  <thead><tr><th>Metric</th><th>Value</th><th>Metric</th><th>Value</th></tr></thead>
   <tbody>
     <tr><td><strong>Monthly Active Users</strong></td><td>1.55M</td><td><strong>Paid Users (Start)</strong></td><td>990,861</td></tr>
     <tr><td><strong>Total Users</strong></td><td>11.24M</td><td><strong>Free Users</strong></td><td>10.23M</td></tr>
-    <tr><td><strong>Paid MRR</strong></td><td>$101.5M</td><td><strong>Avg MRR (Paid)</strong></td><td>$105.16</td></tr>
-    <tr><td><strong>MC Attribution Rate</strong></td><td>34.2%</td><td><strong>MC-Attributed Revenue</strong></td><td>$8.2B / $23.9B</td></tr>
+    <tr><td><strong>Paid MRR</strong></td><td>$101.5M</td><td><strong>MC-Attributed Revenue</strong></td><td>$8.2B / $23.9B (34.2%)</td></tr>
     <tr><td><strong>Users Sent Email</strong></td><td>848,618</td><td><strong>R&A Engaged Users</strong></td><td>~628K (40.4% of MAU)</td></tr>
   </tbody>
 </table>
 
-<h2>Retention Breakdown (April 2026)</h2>
-<p style="font-size:9pt; color:#555; margin-bottom:6px;">The "94.9% overall" is misleading — dragged down by free user churn. For MRR impact, paid retention is the metric that matters.</p>
+<h2>Retention: Monthly vs. Annual (Verified)</h2>
+<p style="font-size:9pt; color:#555; margin-bottom:6px;"><strong>Both "~60%" and "~96%" are correct — different timeframes.</strong> Monthly retention compounds to significant annual churn.</p>
 <table>
-  <thead><tr>
-    <th>Segment</th><th>Users at Start</th><th>Closed</th><th>Downgraded</th><th>Monthly Churn</th><th>Monthly Retention</th>
-  </tr></thead>
+  <thead><tr><th>Timeframe</th><th>Metric</th><th>Value</th><th>How Calculated</th></tr></thead>
   <tbody>
-    <tr><td><strong>Paid (Monthly)</strong></td><td>990,861</td><td>10,825</td><td>33,285 to free</td><td>4.4% (gross)</td><td><strong>95.6% (gross) / 98.9% (logo)</strong></td></tr>
-    <tr><td><strong>Free</strong></td><td>10,232,906</td><td>557,345</td><td>—</td><td>5.4%</td><td><strong>94.6%</strong></td></tr>
+    <tr><td><strong>Monthly</strong></td><td>Paid gross retention</td><td><strong>95.55%</strong></td><td>1 - (10,825 closed + 33,285 downgraded) / 990,861. Consistent 95.3-95.9% across Oct '25 - Apr '26.</td></tr>
+    <tr><td><strong>Annual (compounded)</strong></td><td>Monthly ×12</td><td><strong>~58%</strong></td><td>0.9555^12 = 58.1%. This is the "~60%" figure. Overstates churn — doesn't account for reactivations.</td></tr>
+    <tr><td><strong>Annual (cohort)</strong></td><td>Apr '25 → Apr '26 still paid</td><td><strong>74.9%</strong></td><td>750,263 still paid out of 1,001,941. Higher because some churned users reactivate.</td></tr>
+    <tr><td><strong>Annual (cohort)</strong></td><td>Downgraded to free</td><td><strong>15.7%</strong></td><td>157,384 of 1,001,941 moved from paid to free over 12 months.</td></tr>
+    <tr><td><strong>Annual (cohort)</strong></td><td>Fully left platform</td><td><strong>9.4%</strong></td><td>94,077 of 1,001,941 — account no longer exists.</td></tr>
+  </tbody>
+</table>
+
+<h3>Monthly Paid Retention Trend (Oct 2025 – Apr 2026)</h3>
+<table>
+  <thead><tr><th>Month</th><th>Paid Users</th><th>Closed</th><th>Downgraded</th><th>Total Lost</th><th>Retention</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Oct 2025</strong></td><td>983,038</td><td>8,773</td><td>31,903</td><td>40,676</td><td><strong>95.86%</strong></td></tr>
+    <tr><td><strong>Nov 2025</strong></td><td>984,520</td><td>8,868</td><td>33,723</td><td>42,591</td><td><strong>95.67%</strong></td></tr>
+    <tr><td><strong>Dec 2025</strong></td><td>983,763</td><td>9,266</td><td>34,047</td><td>43,313</td><td><strong>95.60%</strong></td></tr>
+    <tr><td><strong>Jan 2026</strong></td><td>986,890</td><td>10,730</td><td>35,919</td><td>46,649</td><td><strong>95.27%</strong></td></tr>
+    <tr><td><strong>Feb 2026</strong></td><td>980,465</td><td>9,604</td><td>32,414</td><td>42,018</td><td><strong>95.71%</strong></td></tr>
+    <tr><td><strong>Mar 2026</strong></td><td>983,400</td><td>12,407</td><td>28,885</td><td>41,292</td><td><strong>95.80%</strong></td></tr>
+    <tr><td><strong>Apr 2026</strong></td><td>990,861</td><td>10,825</td><td>33,285</td><td>44,110</td><td><strong>95.55%</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>Per-Plan MRR Distribution (Paid Monthly, April 2026)</h2>
+<p style="font-size:9pt; color:#555; margin-bottom:6px;">Average ($105.67) is skewed by high-value accounts. <strong>All revenue projections use median ($45) as the conservative estimate.</strong></p>
+<table>
+  <thead><tr><th>P25</th><th>Median</th><th>P75</th><th>P90</th><th>Average (skewed)</th><th>Users with MRR &gt; $0</th></tr></thead>
+  <tbody><tr><td>$20</td><td><strong>$45</strong></td><td>$100</td><td>$240</td><td>$105.67</td><td>960,955</td></tr></tbody>
+</table>
     <tr><td><strong>Overall</strong></td><td>11,241,127</td><td>575,251</td><td>—</td><td>5.1%</td><td><strong>94.9%</strong></td></tr>
   </tbody>
 </table>
@@ -542,20 +563,20 @@
     <th>Lagging Indicator</th><th>April 2026</th><th>July 2027</th><th>Lift Calculation</th><th>Est. Annual Revenue</th>
   </tr></thead>
   <tbody>
-    <tr><td><strong>Paid Gross Retention</strong></td><td><strong>95.6%</strong></td><td><strong>96.6%</strong></td><td>+1.00pp (capped) = Eng(0.25) + I2A(0.25) + CSAT(0.50)</td><td><strong>$12.2M</strong></td></tr>
-    <tr><td><strong>Trial-to-Paid</strong></td><td><strong>1.8%</strong></td><td><strong>2.4%</strong></td><td>+0.59pp = Eng(5×0.06) + I2A(7.3×0.04)</td><td><strong>$7.5M</strong></td></tr>
-    <tr><td><strong>Free-to-Paid</strong></td><td><strong>0.09%</strong></td><td><strong>0.14%</strong></td><td>+0.047pp = Eng(5×0.005) + I2A(7.3×0.003)</td><td><strong>$6.1M</strong></td></tr>
-    <tr><td><strong>Paid Plan Upgrades</strong></td><td><strong>baseline</strong></td><td><strong>+0.27pp</strong></td><td>+0.27pp = Eng(5×0.015) + I2A(7.3×0.027)</td><td><strong>$1.0M</strong></td></tr>
+    <tr><td><strong>Paid Gross Retention</strong></td><td><strong>95.55% mo / ~58% ann.</strong></td><td><strong>96.55% mo / ~64% ann.</strong></td><td>+1.00pp (capped) = Eng(0.25) + I2A(0.25) + CSAT(0.50)</td><td><strong>$12.2M</strong></td></tr>
+    <tr><td><strong>Trial-to-Paid</strong></td><td><strong>1.8%</strong></td><td><strong>2.4%</strong></td><td>+0.59pp = Eng(5×0.06) + I2A(7.3×0.04)</td><td><strong>$3.2M</strong></td></tr>
+    <tr><td><strong>Free-to-Paid</strong></td><td><strong>0.09%</strong></td><td><strong>0.14%</strong></td><td>+0.047pp = Eng(5×0.005) + I2A(7.3×0.003)</td><td><strong>$2.6M</strong></td></tr>
+    <tr><td><strong>Paid Plan Upgrades</strong></td><td><strong>baseline</strong></td><td><strong>+0.27pp</strong></td><td>+0.27pp = Eng(5×0.015) + I2A(7.3×0.027)</td><td><strong>$0.4M</strong></td></tr>
   </tbody>
 </table>
 
 <div style="background:#f5f5f5; border:2px solid #000; padding:16px; margin:16px 0;">
   <h3 style="margin-bottom:8px;">Total Estimated Annual Revenue Impact (Conservative)</h3>
   <table style="border:none;">
-    <tr><td style="border:none; font-size:14pt; font-weight:700; padding:4px 20px 4px 0;">~$26.8M</td><td style="border:none; font-size:10pt; color:#555;">Total Annual Impact</td></tr>
-    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$12.2M</td><td style="border:none; font-size:9pt; color:#555;">From Retention (+1pp on paid gross)</td></tr>
-    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$13.6M</td><td style="border:none; font-size:9pt; color:#555;">From Conversion (trial-to-paid + free-to-paid)</td></tr>
-    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$1.0M</td><td style="border:none; font-size:9pt; color:#555;">From Upgrades</td></tr>
+    <tr><td style="border:none; font-size:14pt; font-weight:700; padding:4px 20px 4px 0;">~$18.4M</td><td style="border:none; font-size:10pt; color:#555;">Total Annual Impact (using median $45 MRR)</td></tr>
+    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$12.2M</td><td style="border:none; font-size:9pt; color:#555;">From Retention (+1pp on paid gross, uses actual MRR base)</td></tr>
+    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$5.8M</td><td style="border:none; font-size:9pt; color:#555;">From Conversion (trial-to-paid + free-to-paid, median $45)</td></tr>
+    <tr><td style="border:none; font-weight:700; padding:4px 20px 4px 0;">$0.4M</td><td style="border:none; font-size:9pt; color:#555;">From Upgrades (30% of median = $13.50/mo incremental)</td></tr>
   </table>
 </div>
 
@@ -592,7 +613,7 @@
 <p style="font-size:9pt; color:#333; margin-bottom:10px;">User, churn, and MRR baselines from bi_reporting.users_monthly_rollup (April 2026). Paid retention calculated from user.closes and plan transitions (monthly→free). R&A engagement from bi_product.analytics_track_daily_rollup (April 2024 ratio: 800K/1.98M MAU = 40.4%). MC-attributed revenue from bi_reporting.ecommerce_orders_monthly_rollup (April 2026: $8.16B / $23.86B = 34.2%).</p>
 
 <h3>Conservative Guardrails</h3>
-<p style="font-size:9pt; color:#333; margin-bottom:10px;">Retention lift hard-capped at +1pp — the maximum credible impact from a single product investment. Revenue calculated against paid MRR only ($101.5M). Translation ratios back-calculated to hit 1pp cap: engagement 0.25pp, insight-to-action 0.25pp, CSAT 0.50pp. No compounding. Upgrade revenue uses 30% of avg MRR as incremental value.</p>
+<p style="font-size:9pt; color:#333; margin-bottom:10px;">Retention capped at +1pp monthly (max credible for one product). Retention revenue uses actual paid MRR base ($101.5M). All other revenue uses median MRR ($45) not average ($105.67) — this reduces the conversion/upgrade estimates by ~57% vs. using the mean. No compounding. Upgrade value = 30% of median MRR ($13.50/mo incremental).</p>
 
 <h3>Key Risks</h3>
 <p style="font-size:9pt; color:#333; margin-bottom:10px;">Attribution requires controlled experimentation. R&A engagement instrumentation needs restoration to current production. CSAT→retention is the largest contributor (0.50pp) — if QA system delivery slips, half the retention case weakens. Some leading metrics need new instrumentation (Analytics AI WAU, 7-day insight-to-action window).</p>

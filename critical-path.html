@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics AI — Critical Path & Experimentation Hypotheses</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 9pt; color: #000; background: #fff; line-height: 1.4; padding: 24px 32px; max-width: 1500px; margin: 0 auto; }
+  h1 { font-size: 14pt; font-weight: 700; margin-bottom: 4px; }
+  h2 { font-size: 11pt; font-weight: 700; margin-bottom: 8px; margin-top: 24px; border-bottom: 2px solid #1a3a5c; padding-bottom: 4px; }
+  h3 { font-size: 10pt; font-weight: 700; margin-bottom: 6px; }
+  .subtitle { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 16px; }
+  .nav { margin-bottom: 16px; padding: 8px 0; border-bottom: 2px solid #1a3a5c; }
+  .nav a { font-size: 9pt; font-weight: 700; color: #1a3a5c; text-decoration: none; margin-right: 20px; }
+  .nav a.active { border-bottom: 2px solid #1a3a5c; padding-bottom: 4px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 8.5pt; margin-top: 8px; }
+  th, td { border: 1px solid #bfbfbf; padding: 8px 10px; vertical-align: top; text-align: left; }
+  th { background: #1a3a5c; color: #fff; font-weight: 700; font-size: 9pt; }
+  .row-label { background: #f2f2f2; font-weight: 700; font-size: 9pt; width: 140px; min-width: 140px; }
+  .metric { font-weight: 700; color: #1a3a5c; }
+
+  .summary-box { background: #f5f5f5; border: 2px solid #1a3a5c; padding: 16px; margin: 16px 0; }
+  .summary-box h3 { margin-bottom: 8px; }
+  .summary-table td { border: none; padding: 4px 16px 4px 0; font-size: 9pt; }
+  .summary-table .val { font-weight: 700; }
+
+  .note { font-size: 8pt; color: #888; margin-top: 8px; }
+
+  @media print {
+    body { padding: 12px; font-size: 7.5pt; }
+    table { font-size: 7pt; }
+    th, td { padding: 4px 6px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <a href="index.html">Strategy & Roadmap</a>
+  <a href="vp-swimlanes.html">VP Swim Lanes</a>
+  <a href="critical-path.html" class="active">Critical Path & Hypotheses</a>
+</div>
+
+<h1>Critical Path: Key Bets by Quarter</h1>
+<p class="subtitle">8 highest-leverage initiatives across 4 quarters. These drive ~65% of the total projected revenue impact ($12M of $18.4M). The remaining ~35% comes from the full portfolio of supporting initiatives.</p>
+<p class="note">All leading and lagging indicator targets are subsets of the overall model (not additive). Critical path initiatives are scaled to ~65% of total portfolio lift.</p>
+
+<!-- ═══════ Q1 ═══════ -->
+
+<h2>Q1: Foundation, Quality & Action</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>QA System (POC + Self-Healing + CI/CD)</th>
+      <th>Insights-to-Action Workflows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Hypothesis</td>
+      <td>If we catch >95% of data quality issues before customers see them, CSAT will recover from 45% to 55% by end of Q1, reducing paid churn driven by trust erosion.</td>
+      <td>If we enable one-click conversion from any insight or report to a configured campaign, the percentage of MAU who send a campaign within 7 days of viewing data will increase from 54.7% to 56.3%.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Problem</td>
+      <td>Customers can't trust the numbers. Open rates, revenue, and conversion metrics don't match across reports. 65% of analytics feedback relates to data accuracy and performance issues. CSAT crashed to 42% after Q3 data quality incidents.</td>
+      <td>Customers see what happened but can't easily act on it. 53% manually investigate unusual performance, and translating an insight into a campaign requires navigating multiple screens with manual configuration at each step.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Benefit</td>
+      <td>Every number is validated before any customer logs in. Data quality issues are caught and resolved internally, not through customer complaints.</td>
+      <td>Go from "here's what you should do" to a ready-to-send campaign in one click. The gap between knowing and doing is eliminated.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Leading Indicator</td>
+      <td class="metric">R&A CSAT: 45% → 55% (+10pp in Q1)</td>
+      <td class="metric">Insight-to-Action rate: 54.7% → 56.3% (+1.6pp in Q1)</td>
+    </tr>
+    <tr>
+      <td class="row-label">Lagging Impact</td>
+      <td class="metric">Retention: +0.17pp (10pp CSAT x 0.017)</td>
+      <td class="metric">Retention: +0.05pp (1.6pp x 0.034). Trial-to-paid: +0.06pp (1.6pp x 0.04). Free-to-paid: +0.005pp (1.6pp x 0.003)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════ Q2 ═══════ -->
+
+<h2>Q2: Intelligence at Scale</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Campaign Health GA</th>
+      <th>Freddie + Segmentation + Automation Builder</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Hypothesis</td>
+      <td>If every active campaign is continuously monitored with proactive alerts, R&A engagement will increase from 40.4% to 42.1% as users return to check health status and act on recommendations.</td>
+      <td>If AI recommendations connect directly to Freddie, Segmentation, and Automation builder, the I2A rate will increase from 56.3% to 58.3% as the last friction between insight and action is removed.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Problem</td>
+      <td>Marketers discover underperforming campaigns days or weeks after launch. By then, budget is wasted and audiences are fatigued. Alpha and beta coverage left gaps across campaign types.</td>
+      <td>Users receive recommendations but must manually recreate segments, build automations, or configure campaigns across separate screens. The insight-to-action gap causes drop-off.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Benefit</td>
+      <td>Complete, always-on monitoring for the entire marketing program. Know immediately when any campaign underperforms and exactly which dimension is the root cause.</td>
+      <td>Act on any recommendation across segments, automations, and campaigns in a single click. No manual translation required.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Leading Indicator</td>
+      <td class="metric">R&A Engagement: 40.4% → 42.1% (+1.7pp cumulative by Q2)</td>
+      <td class="metric">Insight-to-Action rate: 56.3% → 58.3% (+2.0pp cumulative from Q1)</td>
+    </tr>
+    <tr>
+      <td class="row-label">Lagging Impact</td>
+      <td class="metric">Retention: +0.09pp (1.7pp x 0.05). Upgrades: +0.03pp (1.7pp x 0.015)</td>
+      <td class="metric">Retention: +0.07pp (2.0pp x 0.034). Trial-to-paid: +0.08pp (2.0pp x 0.04). Upgrades: +0.05pp (2.0pp x 0.027)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════ Q3 ═══════ -->
+
+<h2>Q3: Depth & Optimization</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>E-comm Channel/Product Mix Optimization</th>
+      <th>Inventory-Aware Campaigns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Hypothesis</td>
+      <td>If we recommend how to allocate marketing effort across channels and product categories based on historical revenue contribution, MC-attributed revenue will increase from 34.2% to 36.0% as campaigns target higher-converting combinations.</td>
+      <td>If campaigns automatically adjust targeting and messaging based on stock levels, demand velocity, and restock dates, MC-attributed orders will increase from 9.7% to 10.5% as promotions align with actual inventory.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Problem</td>
+      <td>Marketers allocate budget evenly or by intuition. They don't know which channel and product combinations drive the most revenue per dollar spent.</td>
+      <td>Marketing promotes products that are out of stock or ignores products with excess inventory, creating customer frustration and missed revenue.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Benefit</td>
+      <td>Shift spend to the highest-returning channel and product combinations with data-backed allocation recommendations.</td>
+      <td>Campaigns automatically adapt to inventory reality. Never promote a sold-out product or miss a clearance opportunity.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Leading Indicator</td>
+      <td class="metric">MC-Attributed Revenue: 34.2% → 36.0% (+1.8pp by Q3)</td>
+      <td class="metric">MC-Attributed Orders: 9.7% → 10.5% (+0.8pp by Q3)</td>
+    </tr>
+    <tr>
+      <td class="row-label">Lagging Impact</td>
+      <td class="metric">R&A Engagement: +0.8pp (users return to see channel performance). Upgrades: +0.02pp (power feature drives plan upgrades)</td>
+      <td class="metric">R&A Engagement: +0.8pp (inventory-connected users engage more with reporting)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════ Q4 ═══════ -->
+
+<h2>Q4: Closed-Loop Proactive System</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Automated Test & Learn (Full Agentic)</th>
+      <th>Agent Long-Term Memory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row-label">Hypothesis</td>
+      <td>If the system designs tests from performance gaps, runs them, and feeds learnings into future recommendations, the I2A rate will reach 59.6% as the action loop becomes self-improving and each recommendation gets measurably better.</td>
+      <td>If the AI retains knowledge of business goals, brand voice, audience segments, and preferences across all sessions, repeated usage rate will increase by 15% as users stop re-teaching context and start building on prior work.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Problem</td>
+      <td>Testing is manual and episodic. Marketers run occasional A/B tests but rarely close the loop from result to updated strategy to next test. Learning doesn't compound.</td>
+      <td>Context is lost between sessions. Users re-teach the AI their business context, KPIs, and preferences every time they return.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Customer Benefit</td>
+      <td>A continuous learning engine that runs the right tests, applies what it learns, and gets smarter with every campaign cycle, with human oversight at every step.</td>
+      <td>A personal marketing analyst that knows your business and improves with every interaction.</td>
+    </tr>
+    <tr>
+      <td class="row-label">Leading Indicator</td>
+      <td class="metric">Insight-to-Action rate: 58.3% → 59.6% (+1.3pp in Q4)</td>
+      <td class="metric">R&A Engagement: 43.7% → 44.5% (+0.8pp in Q4). Repeated usage: +15%</td>
+    </tr>
+    <tr>
+      <td class="row-label">Lagging Impact</td>
+      <td class="metric">Retention: +0.04pp (1.3pp x 0.034). Upgrades: +0.04pp (1.3pp x 0.027)</td>
+      <td class="metric">Retention: +0.04pp (0.8pp x 0.05). Trial-to-paid: +0.05pp (0.8pp x 0.06)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════ CUMULATIVE SUMMARY ═══════ -->
+
+<div class="summary-box">
+  <h3>Full-Year Cumulative: Critical Path Initiatives Only (~65% of Portfolio)</h3>
+  <table class="summary-table">
+    <tr>
+      <td colspan="4" style="font-weight:700; padding-bottom:8px;">Leading Indicators (critical path contribution / overall target)</td>
+    </tr>
+    <tr>
+      <td>CSAT</td><td class="val">+10pp / +30pp (33%)</td>
+      <td>R&A Engagement</td><td class="val">+3.3pp / +5.0pp (66%)</td>
+    </tr>
+    <tr>
+      <td>Insight-to-Action</td><td class="val">+4.9pp / +7.3pp (67%)</td>
+      <td>MC-Attribution</td><td class="val">+2.6pp / +5.8pp (45%)</td>
+    </tr>
+    <tr><td colspan="4" style="padding-top:12px; font-weight:700; padding-bottom:8px;">Lagging Indicators (critical path contribution / overall target)</td></tr>
+    <tr>
+      <td>Retention</td><td class="val">+0.65pp / +1.00pp (65%)</td>
+      <td>Trial-to-Paid</td><td class="val">+0.19pp / +0.59pp (32%)</td>
+    </tr>
+    <tr>
+      <td>Free-to-Paid</td><td class="val">+0.005pp / +0.047pp (11%)</td>
+      <td>Upgrades</td><td class="val">+0.14pp / +0.27pp (52%)</td>
+    </tr>
+    <tr><td colspan="4" style="padding-top:12px; font-weight:700; padding-bottom:8px;">Estimated Revenue (critical path / total portfolio)</td></tr>
+    <tr>
+      <td>Annual Revenue Impact</td><td class="val" style="font-size:12pt;">~$12.0M / $18.4M (65%)</td>
+      <td></td><td></td>
+    </tr>
+  </table>
+</div>
+
+<p class="note">All numbers are subsets of the overall model. The remaining ~35% of lift comes from ~37 supporting initiatives across the four strategic pillars. CSAT contribution from critical path is 33% because the QA system is one of multiple quality drivers (eval pipeline, hallucination reduction, data transparency, and Omni testing contribute the remaining CSAT recovery in other quarters). Leading indicator progression shown is cumulative from the April 2026 baseline.</p>
+
+</body>
+</html>
